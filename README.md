@@ -1,6 +1,6 @@
 # GO
 Learning GO (basic)
-<img src="/go-time.jpg">
+<img src="/go-time.png">
 
 # Sobre GO
 
