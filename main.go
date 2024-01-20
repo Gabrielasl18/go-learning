@@ -1,7 +1,5 @@
 package main
 
-import "github.com/Gabrielasl18/go-learning/applications"
-
 func main() {
 	// loop.Looping()
 	// variable.Variables()
@@ -30,5 +28,6 @@ func main() {
 	// functionsgo.Anonymous()
 	// functionsgo.MainFunctions()
 	// pointers.PointerTest()
-	applications.DocJsonUnmarshal()
+	// applications.DocJson()
+	// applications.DocJsonUnmarshal()
 }

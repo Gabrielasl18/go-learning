@@ -14,10 +14,10 @@ type Informacoes struct {
 }
 
 func DocJsonUnmarshal() {
-	t := []byte(`{"Nome":"Gabriela","Sobrenome":"Lacerda","Idade":21,"Estado":"Rio de Janeiro","Contabancaria":10.098}`)
+	t := []byte(`{"Nome":"Gabríéla","Sobrenome":"Lacerda","Idade":21,"Estado":"Rio de Janeiro","Contabancaria":10.098}`)
 	t2 := []byte(`{"Nome":"Julie","Sobrenome":"Texeira","Idade":65,"Estado":"Bahia","Contabancaria":2.098}`)
 	t3 := []byte(`{"Nome":"Tarsício","Sobrenome":"Almeida","Idade":90,"Estado":"Rio Grande do Sul","Contabancaria":898}`)
-
+	fmt.Println(t, "\n\n\n")
 	var julieInfo Informacoes
 	var gabeInfo Informacoes
 	var tarcInfo Informacoes
