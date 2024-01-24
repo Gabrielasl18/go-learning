@@ -1,5 +1,7 @@
 package main
 
+import "github.com/Gabrielasl18/go-learning/pointers"
+
 func main() {
 	// loop.Looping()
 	// variable.Variables()
@@ -19,6 +21,7 @@ func main() {
 	// codewars.EvenOrOdd(11)
 	// codewars.Scale("abcd\nefgh\nijkl\nmnop", 2, 3)
 	// codewars.Digitize(987654)
+	// codewars.ToCamelCase("gabriela-de_lacerda_silva")
 	// flowcontrol.FlowControl()
 	// flowcontrol.SwitchCase()
 	// strgs.StringRune()
@@ -27,7 +30,12 @@ func main() {
 	// functionsgo.MainSoma()
 	// functionsgo.Anonymous()
 	// functionsgo.MainFunctions()
-	// pointers.PointerTest()
+	pointers.PointerTest()
 	// applications.DocJson()
 	// applications.DocJsonUnmarshal()
+	// write.WriteFile()
+	// write.WriteBuff()
+	// sort.SortPackage()
+	// sort.SortPackage_2()
+
 }
