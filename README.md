@@ -1,7 +1,6 @@
 # GO
 
-Learning GO (basic)
-<img src="/gopher-image.png">
+<img src="/gopher-image.jpg">
 
 # Sobre GO
 
