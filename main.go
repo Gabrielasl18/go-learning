@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Gabrielasl18/go-learning/pointers"
+import exercises "github.com/Gabrielasl18/go-learning/exercises/pt-8"
 
 func main() {
 	// loop.Looping()
@@ -9,7 +9,7 @@ func main() {
 	// exercises.ExerciseTwo()
 	// exercises.ExerciseThree()
 	// exercises.ExerciseFour()
-	// exercises.ExerciseFive()
+	exercises.ExerciseFive()
 	// exercises.ExerciseSix()
 	// exercises.ExerciseSeven()
 	// exercises.ExerciseEight()
@@ -30,12 +30,11 @@ func main() {
 	// functionsgo.MainSoma()
 	// functionsgo.Anonymous()
 	// functionsgo.MainFunctions()
-	pointers.PointerTest()
+	// pointers.PointerTest()
 	// applications.DocJson()
 	// applications.DocJsonUnmarshal()
 	// write.WriteFile()
 	// write.WriteBuff()
 	// sort.SortPackage()
 	// sort.SortPackage_2()
-
 }
