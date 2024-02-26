@@ -1,7 +1,5 @@
 package main
 
-import exercises "github.com/Gabrielasl18/go-learning/exercises/pt-8"
-
 func main() {
 	// loop.Looping()
 	// variable.Variables()
@@ -9,7 +7,7 @@ func main() {
 	// exercises.ExerciseTwo()
 	// exercises.ExerciseThree()
 	// exercises.ExerciseFour()
-	exercises.ExerciseFive()
+	// exercises.ExerciseFive()
 	// exercises.ExerciseSix()
 	// exercises.ExerciseSeven()
 	// exercises.ExerciseEight()
