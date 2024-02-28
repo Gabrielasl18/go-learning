@@ -20,6 +20,7 @@ func main() {
 	// codewars.Scale("abcd\nefgh\nijkl\nmnop", 2, 3)
 	// codewars.Digitize(987654)
 	// codewars.ToCamelCase("gabriela-de_lacerda_silva")
+	// codewars.IsPrime(1)
 	// flowcontrol.FlowControl()
 	// flowcontrol.SwitchCase()
 	// strgs.StringRune()
@@ -35,4 +36,5 @@ func main() {
 	// write.WriteBuff()
 	// sort.SortPackage()
 	// sort.SortPackage_2()
+	// concurrent.RunesTest()
 }
