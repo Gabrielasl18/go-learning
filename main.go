@@ -21,6 +21,8 @@ func main() {
 	// codewars.Digitize(987654)
 	// codewars.ToCamelCase("gabriela-de_lacerda_silva")
 	// codewars.IsPrime(1)
+	// codewars.PartList([]string{"I", "wish", "I", "hadn't", "come"})
+	// codewars.FizzBuzzCuckooClock("22:00")
 	// flowcontrol.FlowControl()
 	// flowcontrol.SwitchCase()
 	// strgs.StringRune()
@@ -37,4 +39,6 @@ func main() {
 	// sort.SortPackage()
 	// sort.SortPackage_2()
 	// concurrent.RunesTest()
+	// You can edit this code!
+	// Click here and start typing.
 }
