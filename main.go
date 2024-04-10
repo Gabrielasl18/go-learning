@@ -29,6 +29,8 @@ func main() {
 	// codewars.FindShort("Meu nome é Gabriela Lacerda")
 	// codewars.Pyramid(0)
 	// codewars.SortMyString("CodeWars")
+	// codewars.Strong(145)
+	// datastructure.BinarySearch([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 7)
 	// flowcontrol.FlowControl()
 	// flowcontrol.SwitchCase()
 	// strgs.StringRune()
