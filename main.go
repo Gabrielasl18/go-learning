@@ -30,7 +30,6 @@ func main() {
 	// codewars.Pyramid(0)
 	// codewars.SortMyString("CodeWars")
 	// codewars.Strong(145)
-	// datastructure.BinarySearch([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 7)
 	// flowcontrol.FlowControl()
 	// flowcontrol.SwitchCase()
 	// strgs.StringRune()
@@ -40,12 +39,6 @@ func main() {
 	// functionsgo.Anonymous()
 	// functionsgo.MainFunctions()
 	// pointers.PointerTest()
-	// applications.DocJson()
-	// applications.DocJsonUnmarshal()
-	// write.WriteFile()
-	// write.WriteBuff()
-	// sort.SortPackage()
-	// sort.SortPackage_2()
 	// concurrent.RunesTest()
 	// You can edit this code!
 	// Click here and start typing.
