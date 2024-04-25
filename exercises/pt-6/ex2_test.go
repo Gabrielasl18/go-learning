@@ -7,15 +7,11 @@ import (
 	"testing"
 )
 
-var a int
-var b string
-var c bool
-
 func TestExerciseTwo(t *testing.T) {
 	var buf bytes.Buffer
-	exerciseTwo(&buf)
+	expected := "20\n"
 
-	expected := "0" + "\n" + "\nfalse\n"
+	exerciseTwo(&buf)
 
 	if buf.String() != expected {
 		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
@@ -23,5 +19,14 @@ func TestExerciseTwo(t *testing.T) {
 }
 
 func exerciseTwo(out io.Writer) {
-	fmt.Fprintf(out, "%v\n%v\n%v\n", a, b, c)
+	slice := []int{1, 9, 2, 3, 1, 1, 1, 1, 1}
+	fmt.Fprintln(out, variadico(slice...))
+}
+
+func variadico(i ...int) int {
+	total := 0
+	for _, value := range i {
+		total += value
+	}
+	return total
 }

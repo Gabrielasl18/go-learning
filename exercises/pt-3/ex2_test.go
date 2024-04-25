@@ -7,15 +7,18 @@ import (
 	"testing"
 )
 
-var a int
-var b string
-var c bool
-
 func TestExerciseTwo(t *testing.T) {
 	var buf bytes.Buffer
-	exerciseTwo(&buf)
+	expected := `65
+	U+0041 'A'
+	U+0041 'A'
+	U+0041 'A'
+66
+	U+0042 'B'
+	U+0042 'B'
+	U+0042 'B'` + "\n"
 
-	expected := "0" + "\n" + "\nfalse\n"
+	exerciseTwo(&buf)
 
 	if buf.String() != expected {
 		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
@@ -23,5 +26,10 @@ func TestExerciseTwo(t *testing.T) {
 }
 
 func exerciseTwo(out io.Writer) {
-	fmt.Fprintf(out, "%v\n%v\n%v\n", a, b, c)
+	for i := 65; i <= 66; i++ {
+		fmt.Fprintln(out, i)
+		for j := 0; j <= 2; j++ {
+			fmt.Fprintf(out, "\t%#U\n", i)
+		}
+	}
 }

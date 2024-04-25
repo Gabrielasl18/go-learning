@@ -7,21 +7,21 @@ import (
 	"testing"
 )
 
-var a int
-var b string
-var c bool
-
-func TestExerciseTwo(t *testing.T) {
+func TestExerciseSix(t *testing.T) {
 	var buf bytes.Buffer
-	exerciseTwo(&buf)
-
-	expected := "0" + "\n" + "\nfalse\n"
+	expected := "1000\n"
+	exerciseSix(&buf)
 
 	if buf.String() != expected {
 		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
 	}
 }
 
-func exerciseTwo(out io.Writer) {
-	fmt.Fprintf(out, "%v\n%v\n%v\n", a, b, c)
+func exerciseSix(out io.Writer) {
+	x := 10
+	test := func(number int) int {
+		return 100 * number
+	}(x)
+	fmt.Fprintln(out, test)
+
 }

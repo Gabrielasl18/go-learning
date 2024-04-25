@@ -1,6 +1,24 @@
 package exercises
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+	"io"
+	"testing"
+)
+
+func TestExerciseOne(t *testing.T) {
+	var buf bytes.Buffer
+	expected := `baunilha - creme - chocolate - 
+abacaxi - acerola - manga - 
+maracuja - goiaba - morango - `
+
+	exerciseOne(&buf)
+
+	if buf.String() != expected {
+		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
+	}
+}
 
 type pessoa struct {
 	nome                    string
@@ -8,7 +26,7 @@ type pessoa struct {
 	saboresFavoritosSorvete []string
 }
 
-func ExerciseOne() {
+func exerciseOne(out io.Writer) {
 	humano := pessoa{
 		nome:                    "Gabriela",
 		sobrenome:               "Lacerda",
@@ -25,14 +43,14 @@ func ExerciseOne() {
 		saboresFavoritosSorvete: []string{"maracuja", "goiaba", "morango"},
 	}
 	for _, value := range humano.saboresFavoritosSorvete {
-		fmt.Print(value + " - ")
+		fmt.Fprint(out, value+" - ")
 	}
-	fmt.Print("\n")
+	fmt.Fprint(out, "\n")
 	for _, value := range humano2.saboresFavoritosSorvete {
-		fmt.Print(value + " - ")
+		fmt.Fprint(out, value+" - ")
 	}
-	fmt.Print("\n")
+	fmt.Fprint(out, "\n")
 	for _, value := range humano3.saboresFavoritosSorvete {
-		fmt.Print(value + " - ")
+		fmt.Fprint(out, value+" - ")
 	}
 }

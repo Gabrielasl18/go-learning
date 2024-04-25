@@ -7,21 +7,29 @@ import (
 	"testing"
 )
 
-var a int
-var b string
-var c bool
-
 func TestExerciseTwo(t *testing.T) {
 	var buf bytes.Buffer
-	exerciseTwo(&buf)
+	expected := `{gabriela}
+{lacerda}` + "\n"
 
-	expected := "0" + "\n" + "\nfalse\n"
+	exerciseTwo(&buf)
 
 	if buf.String() != expected {
 		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
 	}
 }
 
+type Pessoa struct {
+	nome string
+}
+
+func mudeMe(p *Pessoa) {
+	p.nome = "lacerda"
+}
+
 func exerciseTwo(out io.Writer) {
-	fmt.Fprintf(out, "%v\n%v\n%v\n", a, b, c)
+	p := Pessoa{nome: "gabriela"}
+	fmt.Fprintln(out, p)
+	mudeMe(&p)
+	fmt.Fprintln(out, p)
 }

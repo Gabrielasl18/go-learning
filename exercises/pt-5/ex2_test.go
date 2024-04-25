@@ -1,6 +1,11 @@
 package exercises
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+	"io"
+	"testing"
+)
 
 type pessoa_2 struct {
 	nome                    string
@@ -8,7 +13,29 @@ type pessoa_2 struct {
 	saboresFavoritosSorvete []string
 }
 
-func ExerciseTwo() {
+func TestExerciseTwo(t *testing.T) {
+	var buf bytes.Buffer
+	expected := `Gabriela
+	baunilha
+	creme
+	chocolate
+Poli
+	abacaxi
+	acerola
+	manga
+Jessica
+	maracuja
+	goiaba
+	morango` + "\n"
+
+	exerciseTwo(&buf)
+
+	if buf.String() != expected {
+		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
+	}
+}
+
+func exerciseTwo(out io.Writer) {
 
 	pessoasMap := map[string]pessoa_2{
 		"Lacerda": pessoa_2{
@@ -29,9 +56,9 @@ func ExerciseTwo() {
 	}
 
 	for _, value := range pessoasMap {
-		fmt.Println(value.nome)
+		fmt.Fprintln(out, value.nome)
 		for _, value := range value.saboresFavoritosSorvete {
-			fmt.Println("\t", value)
+			fmt.Fprintln(out, "\t", value)
 		}
 	}
 }

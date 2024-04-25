@@ -9,21 +9,40 @@ import (
 
 func TestExerciseThree(t *testing.T) {
 	var buf bytes.Buffer
+	expected := `2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023` + "\n"
 
 	exerciseThree(&buf)
 
-	expected := "42\t" + "James Bond\t" + "true"
-
-	if expected != buf.String() {
+	if buf.String() != expected {
 		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
 	}
 }
 
-var r int = 42
-var u string = "James Bond"
-var i bool = true
-
 func exerciseThree(out io.Writer) {
-	s := fmt.Sprintf("%v\t%v\t%v", r, u, i)
-	fmt.Fprintf(out, "%s", s)
+	anonasc := 2003
+	anoatual := 2023
+	for anonasc <= anoatual {
+		fmt.Fprintln(out, anonasc)
+		anonasc++
+	}
 }
