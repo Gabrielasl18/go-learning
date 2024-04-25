@@ -11,7 +11,7 @@ func TestSelectionSort(t *testing.T) {
 	if reflect.DeepEqual(r, arrSorted) {
 		t.Log("ok!")
 	} else {
-		t.Error("message not found")
+		t.Error("error")
 	}
 }
 
