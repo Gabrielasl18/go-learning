@@ -1,18 +1,6 @@
 package main
 
 func main() {
-	// loop.Looping()
-	// variable.Variables()
-	// exercises.ExerciseOne()
-	// exercises.ExerciseTwo()
-	// exercises.ExerciseThree()
-	// exercises.ExerciseFour()
-	// exercises.ExerciseFive()
-	// exercises.ExerciseSix()
-	// exercises.ExerciseSeven()
-	// exercises.ExerciseEight()
-	// exercises.ExerciseNine()
-	// exercises.ExerciseTen()
 	// codewars.HighAndLow("1 1 98 34 21 -1")
 	// codewars.Disemvowel("This website is for losers LOL!")
 	// codewars.GetCount("Gabriela Lacerda")
@@ -30,16 +18,4 @@ func main() {
 	// codewars.Pyramid(0)
 	// codewars.SortMyString("CodeWars")
 	// codewars.Strong(145)
-	// flowcontrol.FlowControl()
-	// flowcontrol.SwitchCase()
-	// strgs.StringRune()
-	// slice.SliceTest()
-	// strct.StructsGo()
-	// functionsgo.MainSoma()
-	// functionsgo.Anonymous()
-	// functionsgo.MainFunctions()
-	// pointers.PointerTest()
-	// concurrent.RunesTest()
-	// You can edit this code!
-	// Click here and start typing.
 }

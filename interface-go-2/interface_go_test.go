@@ -1,6 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+	"io"
+	"testing"
+)
+
+func TestInterface_go_2(t *testing.T) {
+	var buf bytes.Buffer
+	expected := `{4 true}
+au-au
+playful, cute, funny
+{2 false}
+piu-piu
+small, yellow` + "\n"
+
+	interface_go_2(&buf)
+
+	if buf.String() != expected {
+		t.Errorf("Unexpected output:\nExpected:\n%s\nActual:\n%s\n", expected, buf.String())
+	}
+}
 
 type Animal interface {
 	MakeAnimalSpeak() string
@@ -39,17 +60,17 @@ func (b bird) particulars() string {
 	return "small, yellow"
 }
 
-func selected(a Animal) {
-	fmt.Println(a)
-	fmt.Println(a.MakeAnimalSpeak())
-	fmt.Println(a.particulars())
+func selected(a Animal, out io.Writer) {
+	fmt.Fprintln(out, a)
+	fmt.Fprintln(out, a.MakeAnimalSpeak())
+	fmt.Fprintln(out, a.particulars())
 }
 
-func main() {
+func interface_go_2(out io.Writer) {
 	d := dog{paws: 4, esteem: true}
 	b := bird{wings: 2, esteem: false}
 
-	selected(d)
-	selected(b)
+	selected(d, out)
+	selected(b, out)
 	// funçoes sendo invocadas e vao retornar mensagens diferentes, pois os tipos sao diferentes, apesar de terem a mesma instância
 }
