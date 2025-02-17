@@ -12,7 +12,7 @@ func TestExerciseOne(t *testing.T) {
 
 	exerciseOne(&buf)
 
-	expected := "43, James Bond, true\n" +
+	expected := "42, James Bond, true\n" +
 		"42, int\n" +
 		"true, bool\n" +
 		"James Bond, string\n"
