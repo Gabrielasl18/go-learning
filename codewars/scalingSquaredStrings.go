@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// input -> codewars.Scale("abcd\nefgh\nijkl\nmnop", 2, 3)
 func Scale(str string, k int, v int) string {
 	var newStr3 string
 	intermediate := ""

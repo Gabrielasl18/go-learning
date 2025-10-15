@@ -1,5 +1,6 @@
 package codewars
 
+// input -> codewars.SortMyString("CodeWars")
 func SortMyString(s string) string {
 	var strOdd string
 	var strEven string

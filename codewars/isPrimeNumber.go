@@ -1,5 +1,6 @@
 package codewars
 
+// input -> codewars.IsPrime(1)
 func IsPrime(n int) bool {
 	if n <= 1 {
 		return false

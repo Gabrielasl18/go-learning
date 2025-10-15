@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// input -> FindShort("Meu nome é Gabriela Lacerda")
 func FindShort(s string) int {
 	t := strings.Split(s, " ")
 	lengthLess := len(t[0])

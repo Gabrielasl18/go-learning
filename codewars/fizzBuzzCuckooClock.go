@@ -35,6 +35,7 @@ se for meia hora (12:30/02:30) == cuckoo, só uma vez
 se nao for divisivel por 3 e 5, saíra tick
 */
 
+// input -> codewars.FizzBuzzCuckooClock("22:00")
 func FizzBuzzCuckooClock(timeString string) string {
 	clockString := strings.Split(timeString, ":")
 	hourInt, _ := strconv.Atoi(clockString[0])

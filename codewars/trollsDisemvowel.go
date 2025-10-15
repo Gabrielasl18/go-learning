@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// input -> codewars.Disemvowel("This website is for losers LOL!")
 func Disemvowel(comment string) string {
 	format := ""
 	stringFormated := ""

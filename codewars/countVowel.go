@@ -1,5 +1,6 @@
 package codewars
 
+// input -> codewars.GetCount("Gabriela Lacerda")
 func GetCount(str string) (count int) {
 	strFormated := []rune(str)
 	arrayVowel := [10]string{"a", "A", "e", "E", "i", "I", "o", "O", "u", "U"}

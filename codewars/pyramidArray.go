@@ -1,5 +1,6 @@
 package codewars
 
+// input -> Pyramid(0)
 func Pyramid(n int) [][]int {
 	var slice2 [][]int
 	if n != 0 {

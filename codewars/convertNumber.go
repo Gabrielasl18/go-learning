@@ -6,6 +6,7 @@ import (
 	"strconv"
 )
 
+// input -> codewars.Digitize(987654)
 func Digitize(n int) []int {
 	numFinal := []int{}
 	byteString, err := json.Marshal(n)

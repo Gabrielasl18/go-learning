@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// input -> codewars.SeriesOfNth((5))
 func SeriesOfNth(n int) string {
 	x := 1.0
 	t := 0.0

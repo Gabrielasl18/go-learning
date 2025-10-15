@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// input -> codewars.ToCamelCase("gabriela-de_lacerda_silva")
 func ToCamelCase(s string) string {
 	oc := "_-"
 	stringT := s

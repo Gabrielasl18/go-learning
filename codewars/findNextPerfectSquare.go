@@ -4,6 +4,7 @@ import (
 	"math"
 )
 
+// input -> codewars.FindNextSquare(155)
 func FindNextSquare(n int64) int64 {
 	i := n + 1
 	boolean := false

@@ -9,6 +9,7 @@ import (
 var menor int
 var maior int
 
+// input -> codewars.HighAndLow("1 1 98 34 21 -1")
 func HighAndLow(in string) string {
 	res1 := strings.Split(in, " ")
 	maior, _ = strconv.Atoi(string(res1[0]))

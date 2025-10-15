@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// input -> codewars.Strong(145)
 func Strong(n int) string {
 	sliceOfNumbers := strings.Split(strconv.Itoa(n), "")
 	var numberFinal int
